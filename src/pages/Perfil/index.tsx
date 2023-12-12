@@ -10,6 +10,8 @@ function Perfil() {
 
     const id = "9d2e179b-7d30-416d-bff9-44c423ef12a8";
     const [users, setUsers] = useState<any[]>([]);
+    const [user, setUser] = useState<any>({});
+
 
 
     // const [user, setUser] = useState<any>(
@@ -31,14 +33,16 @@ function Perfil() {
     }, [])
 
     async function mostrarUser() {
-        console.log(`${usersResource}/${id} `)
+       
         await api.get(`${usersResource}/${id}`).then((resposta: any) => {
-            console.log("aaaaaaaaaaaaaaaaaa");
+            console.log("teste");
             console.log(resposta.data)
-            setUsers(resposta.data);
+            setUser(resposta.data);
+            console.log(user);
+            
         })
 
-      
+
     }
 
     return (
@@ -62,37 +66,19 @@ function Perfil() {
 
                         </thead>
                         <tbody className="direita">
-                            {/* Necessário verificar o login do usuário para as informações serem puxadas adequadamente  */}
-                            {/* 
+
+
+
                             <CardPerfil
                                 id={user.id}
                                 matricula={user.matricula}
                                 nome={user.nome}
-                                setor={user.setor}
-                                dataNasc={user.nascimento}
+                                setor={user.area}
+                                dataNasc={user.dataNascimento}
                                 funcao={user.funcao}
                                 sessao={user.sessao}
+                            />
 
-                            /> */}
-
-                            {users.map((user: any, index: any) => {
-                                console.log(users);
-                                return <tr key={index}>
-                                    <CardPerfil
-                                        id={id}
-                                        matricula={user.matricula}
-                                        nome={user.nome}
-                                        setor={user.setor}
-                                        dataNasc={user.nascimento}
-                                        funcao={user.funcao}
-                                        sessao={user.sessao}
-                                    />
-
-                                </tr>
-
-
-                            }
-                            )}
 
 
 

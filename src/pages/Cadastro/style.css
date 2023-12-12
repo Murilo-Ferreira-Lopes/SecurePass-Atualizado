@@ -102,7 +102,7 @@ body {
 
 }
 
-._cadastro .form input::placeholder {
+._cadastro form input::placeholder {
     color: white
 }
 

@@ -15,7 +15,7 @@ export default function CardPerfil(props: any) {
                     <th>{props.matricula}</th>
                     <th>{props.nome}</th>
                     <th>{props.setor}</th>
-                    <th>{props.dataNasc}</th>
+                    <th>{props.nascimento}</th>
                     <th>{props.funcao}</th>
                     <th>{props.sessao}</th>
                 </tr>

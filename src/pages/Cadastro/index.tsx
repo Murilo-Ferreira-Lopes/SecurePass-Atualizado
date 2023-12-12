@@ -89,9 +89,9 @@ export default function Cadastro() {
             >
                 <form onSubmit={cadastrarUsers} className="formulario bkg_login" method="POST">
                     <div className="forms">
-                        <label htmlFor="nome" />
+                        <label htmlFor="nome" />Nome:
                         <input type="text"
-                            placeholder="Digite seu Nome:"
+                            placeholder="Nome"
                             id="nome"
                             onChange={(event) => {
                                 setNome(event.target.value)
@@ -100,9 +100,9 @@ export default function Cadastro() {
                         />
                     </div>
                     <div className="forms">
-                        <label htmlFor="matricula" />Digite a Matricula:
+                        <label htmlFor="matricula" />Matricula:
                         <input type="text"
-                            placeholder="Digite a Matricula:"
+                            placeholder="Matricula"
                             id="matricula"
                             onChange={(event) => {
                                 setMatricula(event.target.value)
@@ -111,9 +111,9 @@ export default function Cadastro() {
                         />
                     </div>
                     <div className="forms">
-                        <label htmlFor="setor" />Digite o Setor:
+                        <label htmlFor="setor" />Setor:
                         <input type="text"
-                            placeholder="Digite o Setor:"
+                            placeholder="Setor"
                             id="setor"
                             onChange={(event) => {
                                 setSetor(event.target.value)
@@ -124,9 +124,9 @@ export default function Cadastro() {
                 </form>
                 <form onSubmit={cadastrarUsers} className="formulario" method="POST">
                     <div className="forms">
-                        <label htmlFor="sessao" />Digite a Sessao:
+                        <label htmlFor="sessao" />Sessao:
                         <input type="text"
-                            placeholder="Digite a Sessao:"
+                            placeholder="Sessao"
                             id="sessao"
                             onChange={(event) => {
                                 setSessao(event.target.value)
@@ -135,9 +135,9 @@ export default function Cadastro() {
                         />
                     </div>
                     <div className="forms">
-                        <label htmlFor="funcao" />Digite sua Função:
+                        <label htmlFor="funcao" />Função:
                         <input type="text"
-                            placeholder="Digite a Função:"
+                            placeholder="Função"
                             id="funcao"
                             onChange={(event) => {
                                 setFuncao(event.target.value)
@@ -146,9 +146,9 @@ export default function Cadastro() {
                         />
                     </div>
                     <div className="forms">
-                        <label htmlFor="dataNasc" />Informe a data de Nascimento:
+                        <label htmlFor="dataNasc" />data de Nascimento:
                         <input type="text"
-                            placeholder="Informe a data de Nascimento:"
+                            placeholder="data de Nascimento"
                             id="dataNasc"
                             onChange={(event) => {
                                 setDataNasc(event.target.value)
@@ -160,9 +160,9 @@ export default function Cadastro() {
                 </form>
                 <form onSubmit={cadastrarUsers} className="formulario" method="POST">
                     <div className="forms">
-                        <label htmlFor="email" />Digite seu E-Mail:
+                        <label htmlFor="email" />E-Mail:
                         <input type="email"
-                            placeholder="Digite seu E-Mail:"
+                            placeholder="E-Mail"
                             id="email"
                             onChange={(event) => {
                                 setEmail(event.target.value)
@@ -171,9 +171,9 @@ export default function Cadastro() {
                         />
                     </div>
                     <div className="forms">
-                        <label htmlFor="password" />Digite uma Senha:
+                        <label htmlFor="password" />Senha:
                         <input type="password"
-                            placeholder="Digite sua Senha"
+                            placeholder="Senha"
                             id="password"
                             onChange={(event) => {
                                 setPassword(event.target.value)

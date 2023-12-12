@@ -16,14 +16,13 @@ export const typesUserResource = '/types'
 export const usersResource = '/users'
 
 
-
 // Rota para User Machine
 export const userMachineResource = '/user-machine'
 
 
 
 const apiPort = '8080';
- const localApiUri = `http://localhost:${apiPort}/api`;
+ const localApiUri = `http://localhost:${apiPort}`;
 
 
 const api = axios.create({
