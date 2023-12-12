@@ -20,13 +20,7 @@ export default function CardPerfil(props: any) {
                     <th>{props.sessao}</th>
                 </tr>
             </div>
-            {/* <div className="techs">
-               {
-                parseListaUsers().map((dev: string, index: number) =>{
-                return <span key={index}>{dev}</span>
-                })
-              }
-             </div> */}
+          
     </div>
     )
 }
